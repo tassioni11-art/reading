@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="책을 읽은 뒤 창의적 독서 후 활동을 함께하는 교육용 플랫폼, book-class" />
+  <meta name="theme-color" content="#6D4AA8" />
+  <title>book-class</title>
+
+  <!-- Google Fonts: Noto Sans KR -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Pretendard (우선 적용, 없으면 Noto Sans KR로 대체) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="#student" class="logo">
+        <i class="fa-solid fa-book-open" aria-hidden="true"></i>
+        <span>book-class</span>
+      </a>
+
+      <nav class="role-nav" aria-label="화면 전환">
+        <a href="#student" data-route="student">
+          <i class="fa-solid fa-user-graduate" aria-hidden="true"></i><span>학생</span>
+        </a>
+        <a href="#teacher" data-route="teacher">
+          <i class="fa-solid fa-chalkboard-user" aria-hidden="true"></i><span>교사</span>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="app" class="main-container">
+    <!-- 화면 콘텐츠는 app.js가 이 영역에 그려 넣습니다 -->
+  </main>
+
+  <div id="modal-root"></div>
+  <div id="toast-root" class="toast-root" aria-live="polite"></div>
+
+  <!-- 시트 주소는 config.js에 적습니다 -->
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
